@@ -1,7 +1,16 @@
+/**
+ * @author Toru Nagashima <https://github.com/mysticatea>
+ */
 "use strict";
 
-const RuleTester = require("./rule-tester");
+const isCombiningCharacter = require("./is-combining-character");
+const isEmojiModifier = require("./is-emoji-modifier");
+const isRegionalIndicatorSymbol = require("./is-regional-indicator-symbol");
+const isSurrogatePair = require("./is-surrogate-pair");
 
 module.exports = {
-	RuleTester,
+	isCombiningCharacter,
+	isEmojiModifier,
+	isRegionalIndicatorSymbol,
+	isSurrogatePair,
 };
